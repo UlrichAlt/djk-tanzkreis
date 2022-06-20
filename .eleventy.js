@@ -1,8 +1,9 @@
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation"); const
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation"); 
+const
 Image = require("@11ty/eleventy-img");
 
 async function imageShortCode(src,alt) { let metadata = await Image(src, {
-    widths: [300,600,1000,null], outputDir: "./_site/img", formats: ["avif", "jpeg"] });
+    widths: [300,600,1000], outputDir: "./_site/img", formats: ["avif", "jpeg"] });
     let sizes = "(max-width: 720px) 100vw, (max-width: 1260px) 70vw, calc(50vw-100px)"; 
     let imageAttributes = { alt, sizes, loading: "lazy", decoding: "async" };
     return Image.generateHTML(metadata, imageAttributes, {whitespaceMode: "inline"}); }

@@ -1,7 +1,10 @@
 ---
 title: 10000 Schritte Tanzfitness
 description: 10000 Schritte Tanzfitness beim DJK Tanzkreis Sulzbachtal e.V
+featured_image: ./src/img/10000schritte-neu.jpeg
+featured_image_alt: Flyer 10000 Schritte
 date: 2020-08-01
+tags: kurse
 ---
 Tanz-Workouts sind ideal für alle, die sich gerne zur Musik bewegen. Sie
 verbinden ein mehr oder weniger intensives Training mit einer großen Portion

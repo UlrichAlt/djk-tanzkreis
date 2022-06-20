@@ -1,13 +1,25 @@
-<ul>
+<div class="grid grid-cols-4 gap-4">
   {% for post in postslist %}
-    <li>
-      <strong>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </strong>
-      -
-      <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-      -
-      <span>{{ post.data.description }}</span>
-    </li>
+
+<div class="max-w-sm rounded overflow-hidden shadow-lg">
+{% image post.data.featured_image, post.data.featured_image_alt %}
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a></div>
+    <time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate }}</time>
+    <p class="text-gray-700 text-base">
+{{post.data.description }}
+    </p>
+  </div>
+  <div class="px-6 pt-4 pb-2">
+  {% for tag in post.data.tags %}
+{% if tag != "posts" %}
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm
+font-semibold text-gray-700 mr-2 mb-2">#{{ tag }}</span>
+{% endif %}
   {% endfor %}
-</ul>
+  </div>
+</div>
+
+  {% endfor %}
+</div>

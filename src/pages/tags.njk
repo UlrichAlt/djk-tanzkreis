@@ -1,0 +1,15 @@
+---
+pagination:
+    data: collections
+    size: 1
+    alias: tag
+    filter:
+        - all
+        - posts
+layout: layouts/base.njk
+permalink: /tags/{{ tag }}/
+---
+<h1>Meldungen mit Tag "{{ tag }}"</h1>
+
+{% set postslist = collections[ tag ] %}
+{% include "components/postslist.njk" %}

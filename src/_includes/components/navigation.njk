@@ -1,5 +1,5 @@
-<nav class="flex items-center justify-between flex-wrap px-5 py-3 border-b">
-  <a href="/" class="font-semibold text-xl tracking-tight">DJK Tanzkreis
+<nav class="flex sticky top-0 bg-white  items-center justify-between flex-wrap px-5 py-3 border-b">
+  <a href="/" class="text-xl tracking-tight">DJK Tanzkreis
 Sulzbach e.V</a>
 
   {% set navPages = collections.all | eleventyNavigation %}
@@ -15,5 +15,6 @@ Sulzbach e.V</a>
        </a>
       </li>
     {% endfor %}
+  {% include "../components/social_links.njk" %}
  </ul>
 </nav>

@@ -14,6 +14,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(require("eleventy-plugin-postcss"));
     eleventyConfig.addPlugin(require("@sherby/eleventy-plugin-files-minifier"));
     eleventyConfig.addNunjucksAsyncShortcode("image", imageShortCode);
+    eleventyConfig.addPassthroughCopy("src/icons");
 
 
   const { DateTime } = require("luxon");

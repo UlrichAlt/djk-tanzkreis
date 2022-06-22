@@ -17,6 +17,6 @@ jobs:
           username: sftp_ulrichalt@neu.tanzkreis-sulzbach.com
           localdir: _dist
           remoteDir: /
-          password: {{ secrets.STRATO_PASSWORD }}
+          password: ${{ secrets.STRATO_PASSWORD }}
 
 

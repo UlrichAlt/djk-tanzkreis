@@ -1,0 +1,16 @@
+
+<nav class="flex px-14 py-14 justify-between items-center flex-wrap" aria-labelledby="my-pagination">
+  <ol>
+    <li class="inline mr-4">{% if page.url != pagination.href.first %}<a
+href="{{ pagination.href.first }}">&lt;&lt;</a>{% else %}&lt;&lt;{% endif %}</li>
+    <li class="inline mr-4">{% if pagination.href.previous %}<a href="{{
+pagination.href.previous }}">&lt;</a>{% else %}&lt;{% endif %}</li>
+{%- for pageEntry in pagination.pages %}
+    <li class="inline mr-4"><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
+{%- endfor %}
+    <li class="inline mr-4">{% if pagination.href.next %}<a href="{{
+pagination.href.next }}">&gt;</a>{% else %}&gt;{% endif %}</li>
+    <li class="inline mr-4">{% if page.url != pagination.href.last %}<a href="{{
+pagination.href.last }}">&gt;&gt;</a>{% else %}&gt;&gt;{% endif %}</li>
+  </ol>
+</nav>

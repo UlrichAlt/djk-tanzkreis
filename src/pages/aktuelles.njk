@@ -1,10 +1,14 @@
 ---
 title: Aktuelles
 layout: layouts/base.njk
-permalink: /aktuelles/
+pagination:
+    data: collections.posts
+    size: 10
+    alias: postslist
+    reverse: true
 eleventyNavigation:
   key: Aktuelles
   order: 2
 ---
-{% set postslist = collections.posts %}
 {% include "components/postslist.njk" %}
+{% include "components/blog_nav.njk" %}

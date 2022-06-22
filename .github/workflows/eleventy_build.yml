@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
   build_deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
       - name: Build
@@ -11,9 +11,12 @@ jobs:
         with:
           install_dependencies: true
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: wangyucode/sftp-upload-action@v1.3.2
         with:
-          publish_dir: _site
-          publish_branch: gh-pages
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          host: ssh.strato.de
+          username: sftp_ulrichalt@neu.tanzkreis-sulzbach.com
+          localdir: _dist
+          remoteDir: /
+          password: {{ secrets.STRATO_PASSWORD }}
+
 

@@ -15,7 +15,7 @@ jobs:
         with:
           host: ssh.strato.de
           username: sftp_ulrichalt@neu.tanzkreis-sulzbach.com
-          localdir: _dist
+          localdir: _site
           remoteDir: /
           password: ${{ secrets.STRATO_PASSWORD }}
 

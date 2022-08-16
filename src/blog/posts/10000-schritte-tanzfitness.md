@@ -12,7 +12,7 @@ Spaß. Es gibt ganz unterschiedliche Tanz-Workout-Angebote in den Fitnessclubs
 und den Vereinen, wie z.B. Zumba, Aroha, Body Jam und viele andere mehr. Oft
 sind diese Workouts gut für junge Menschen geeignet.
 
-{% image "./src/img/10000schritte-neu.jpeg", "Flyer 10000 Schritte" %}
+{% image "./src/img/10000schritte-neu.jpeg", "Flyer 10000 Schritte", "100vw" %}
 
 Der Tanzkreis Sulzbachtal richtet sich mit seinem 10.000 Schritte Tanz-Fitness
 hauptsächlich an Herz-/ Kreislauf-Gesunde Menschen im besten Alter! Das Workout

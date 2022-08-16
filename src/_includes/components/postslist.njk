@@ -2,7 +2,7 @@
   {% for post in postslist | reverse %}
 
 <div class="max-w-sm rounded overflow-hidden shadow-lg">
-{% image post.data.featured_image, post.data.featured_image_alt %} 
+{% image post.data.featured_image, post.data.featured_image_alt, "5vw" %} 
   <div class="px-6 py-4">
     <div class="font-bold text-xl mb-2">
         <a href="{{ post.url | url }}">{{ post.data.title }}</a></div>

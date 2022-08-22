@@ -1,16 +1,10 @@
-<nav class="flex sticky top-0 bg-white  items-center justify-between flex-wrap px-5 py-3 border-b">
-  <a href="/" class="text-xl tracking-tight">DJK Tanzkreis
-Sulzbach e.V</a>
+<nav class="flex sticky top-2 bg-white items-center justify-between flex-wrap px-5 py-5 border-b">
+  <a href="/" class="text-xl tracking-tight"><div class="w-1/6">{% image "src/img/djk-tanzkreis-logo.png", "Logo DJK Tanzkreis", "20vw" %}</div> Tanzkreis Sulzbachtal e.V.</a>
 
-  {% set navPages = collections.all | eleventyNavigation %}
   <ul>
-    {% for entry in navPages %}
+    {% for entry in collections.all | eleventyNavigation %}
       <li class="inline">
-        <a
-         href="{{ entry.url }}"
-         class="uppercase text-sm py-1 px-2 rounded mr-4 inline-block
-         {{'bg-black text-white' if entry.url in page.url
-         else 'text-gray-700 hover:text-gray-900'}}">
+        <a href="{{ entry.url }}" class="uppercase text-sm py-1 px-2 rounded mr-4 inline-block {{'bg-black text-white' if entry.url in page.url else 'text-gray-700 hover:text-gray-900'}}">
          {{ entry.title }}
        </a>
       </li>

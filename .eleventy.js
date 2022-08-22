@@ -22,5 +22,7 @@ module.exports = function(eleventyConfig) {
         DateTime.fromJSDate(dateObj, {}).setLocale('de-de').toLocaleString( {
         month: '2-digit', year: '2-digit', day: '2-digit' }); });
 
+    eleventyConfig.addPassthroughCopy("src/docs");
+
     return { markdownTemplateEngine: "njk", dir: { input: 'src', output: '_site' } };
 };

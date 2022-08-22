@@ -27,7 +27,7 @@ alle, die Abnehmen oder ihren Körper formen wollen. Verspannungen lösen sich u
 das Herz-Kreislauf-System wird wie beim Intervalltraining prima trainiert.
 Wichtig ist aber, dass die TeilnehmerInnen von Herz, Kreislauf und Lunge her
 ohne Beschwerden und normal belastbar sowie gesund sind. Wer sich nicht sicher
-ist sollte im Vorfeld seinen Arzt fragen.
+ist, sollte im Vorfeld seinen Arzt fragen.
 
 Das Training findet ohne Fitnessgeräte statt, der Trainingsablauf ist
 Video-unterstützt. Dadurch kann das Training auch zu Hause durchgeführt werden.
